@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   get 'articles/index'
-  root 'articles#index'
   resources :articles
+  root 'articles#index'
+
+  
 
 
   # The priority is based upon order of creation: first created -> highest priority.
